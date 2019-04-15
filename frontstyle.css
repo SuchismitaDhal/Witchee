@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background-color: #242424;
+    height: 100vh;
+    cursor: none;
+}
+
+.ground{
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    cursor: none;
+}
+
+.navbar-brand{
+    cursor: none;
+}
+
+.navbar{
+    cursor: none;
+}
+
+.brand{
+    font-family: 'Catamaran', sans-serif;
+    color: #ffffff;
+    position: relative;
+    width: 800px;
+    justify-content: center;
+    display: flex;
+    cursor: none;
+}
+
+.navbar-brand small{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding-left: 5px;
+    margin-left: 10px;
+    color: #c4c4c4;
+    cursor: none;
+    font-family: Roboto,sans-serif;
+    letter-spacing: 3px;
+}
+
+.navbar-brand img{
+    opacity: 1;
+    transition: 0.2s;
+    cursor: none;
+}
+
+.navbar-brand img:hover{
+    opacity: 0.5;
+}
+
+.brand h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.brand h1:nth-child(2){
+    color: #242424;
+    font-size: 10em;
+    font-weight: lighter;
+    overflow: hidden;
+    z-index: 2;
+    transition: 1s;
+    -webkit-clip-path: polygon(50% 0%, 92% 0, 54% 65%, 72% 79%, 98% 100%, 41% 96%, 0 93%, 54% 64%, 0 49%, 0 0);
+    clip-path: polygon(50% 0%, 92% 0, 54% 65%, 72% 79%, 98% 100%, 41% 96%, 0 93%, 54% 64%, 0 49%, 0 0);
+}
+
+.brand h1:nth-child(1){
+    color: #ffffff;
+    font-size: 10em;
+    font-weight: bolder;
+    text-shadow: -6px -6px 0 #ffffff,  
+                  6px -6px 0 #ffffff,
+                 -6px  6px 0 #ffffff,
+                  6px  6px 0 #ffffff;
+}
+
+.brand h1:nth-child(2):hover{
+    -webkit-clip-path: polygon(50% 0%, 92% 0, 83% 50%, 92% 75%, 100% 100%, 41% 94%, 0 88%, 82% 50%, 3% 13%, 0 0);
+    clip-path: polygon(50% 0%, 92% 0, 83% 50%, 92% 75%, 100% 100%, 41% 94%, 0 88%, 82% 50%, 3% 13%, 0 0);
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.cursor-hit{
+	/*this class gets added when cursor hovers over the logo*/
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: blast 1s;
+}
+
+@keyframes blast{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.footer{
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #757575;
+    left: 64px;
+    right: 64px;
+  }
+
+.footer h1{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.footer h1:nth-child(2) {
+    position: absolute;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 5s;
+    z-index: 20;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.footer h1:nth-child(1) {
+    position: absolute;
+}
+
+.footer h2{
+    font-size: 1rem;
+    font-style: bolder;
+}
+
+.source a{
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    position: fixed;
+    color: #c4c4c4;
+    right: -120px;
+    bottom: 5px;
+    font-family: Roboto,sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.source:hover{
+    cursor: pointer;
+}
+
+/*
+	best enjoyed on large screen, but still... 
+*/
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar{
+        cursor: none;
+    }
+    .brand h1{
+        text-transform: uppercase;
+        width: 80%;
+        text-align: center;
+    }
+
+    .brand h1:nth-child(2){
+        font-size: 4rem;
+        color: #242424;
+        font-weight: lighter;
+        overflow: hidden;
+        z-index: 2;
+        transition: none;
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+
+    .brand h1:nth-child(1){
+        font-size: 4rem;
+        color: #ffffff;
+        font-weight: bolder;
+        text-shadow: -3px -3px 0 #ffffff,
+                      3px -3px 0 #ffffff,
+                     -3px  3px 0 #ffffff,
+                      3px  3px 0 #ffffff;
+    }
+
+    .brand h1:nth-child(2):hover{
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+
+    body{
+        cursor: pointer;
+    }
+    .cursor{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .source a{
+        right: 0px;
+        transform: none;
+        color: #c4c4c4;
+        position: absolute;
+        width: 100%;
+        bottom: 35px;
+        font-family: Roboto,sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        
+    }
+  }
+
+  
