@@ -45,9 +45,9 @@ async function slideshow() {
   await sleep(1500);
 
   if (fidx % 2 == 0)
-    pane[fidx].src = "slideshow/" + pic[pidx] + "-left.jpg";
+    pane[fidx].src = "../slideshow/" + pic[pidx] + "-left.jpg";
   else
-    pane[fidx].src = "slideshow/" + pic[pidx] + "-right.jpg";
+    pane[fidx].src = "../slideshow/" + pic[pidx] + "-right.jpg";
 
   pane[fidx].classList.remove('disapp');
   pane[fidx].classList.add('app');
