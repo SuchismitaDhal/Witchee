@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Witchee</title>
+	<link rel="icon" href="logo/logo-white.png" sizes="512x512">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<!--stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" rel="stylesheet">
+
+
+	<!--scripts-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+		</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+		</script>
+</head>
+
+<body>
+	<header class="container">
+		Witchee
+	</header>
+	<div class="container gallary row">
+		<div class="col-lg-3 col-xs-6">
+			<img id="frame-1" src="slideshow/pluh-a.jpg" alt="">
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<img id="frame-2" src="slideshow/pluh-b.jpg" alt="">
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<img id="frame-3" src="slideshow/pluh-c.jpg" alt="">
+		</div>
+		<div class="col-lg-3 col-xs-6">
+			<img id="frame-4" src="slideshow/pluh-d.jpg" alt="">
+		</div>
+	</div>
+
+	<div class="container menu">
+		<ul class="main-menu">
+			<li class="menu-item"><a href="#">competitions</a></li>
+			<li class="menu-item"><a href="#">project ideas</a></li>
+			<li class="menu-item"><a href="#">resources</a></li>
+			<li class="menu-item"><a href="#">calander</a></li>
+			<li class="menu-item"><a href="#">manipur</a></li>
+			<li class="menu-item"><a href="#">meme of the week</a></li>
+			<li>
+				<div class="contacts">
+					<button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="top"
+						title="Email" onclick="window.location.href = 'mailto:dhalsuchismita7@gmail.com;';">
+						<i class="far fa-envelope-open"></i>
+					</button>
+					<button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="top"
+						title="Linkedin"
+						onclick="window.location.href = 'https://www.linkedin.com/in/suchismita-dhal-835251154/';"> <i
+							class="fab fa-linkedin"></i>
+					</button>
+					<button type="button" class="btn btn-outline-light" data-toggle="tooltip" data-placement="top"
+						title="Github" onclick="window.location.href = 'https://github.com/SuchismitaDhal';">
+						<i class="fab fa-github"></i>
+					</button>
+				</div>
+			</li>
+		</ul>
+		<div class="about">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit sint aperiam impedit eaque at repellendus
+			quaerat minus, ducimus magni corrupti adipisci, amet pariatur explicabo dolor! Quas maiores possimus velit
+			quis?
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dolorum accusantium facilis hic, vitae
+			laborum debitis ex quasi quidem quam optio assumenda nemo! Eius at obcaecati exercitationem explicabo enim
+			pariatur?
+		</div>
+	</div>
+
+	<div class="container meme-box">
+
+	</div>
+
+	<div class="source">
+		<a href="https://projects.jonchretien.com/emp/">@ projects.jonchretien.com/emp</a>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	<script src="slide.js"></script>
+</body>
+
+</html>
